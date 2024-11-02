@@ -41,7 +41,7 @@ async function addTask (event) {
 		}
 	}
 
-const loadTask = async (user) => {
+const loadTask = async () => {
 	try{
 		const url = "https://playground.4geeks.com/todo/users/embrana"
 		const resp = await fetch (url)
