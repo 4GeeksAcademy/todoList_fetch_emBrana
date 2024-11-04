@@ -60,11 +60,11 @@ const loadTask = async () => {
 
 const setUser = async () => {
 	try {
-		const resp = await fetch ("https://playground.4geeks.com/todo/user/embrana", {
+		const resp = await fetch ("https://playground.4geeks.com/todo/users/embrana", {
 			method: "POST",
 			headers: {"Content-Type": "application/json"}
 		})
-		if (resp.status == 210) { loadTask()}
+		if (resp.status == 201) { loadTask()}
 	} catch (error) {
 		console.log(error)
 		return false
